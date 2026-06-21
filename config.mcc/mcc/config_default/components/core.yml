@@ -2675,6 +2675,28 @@ data:
           type: Dynamic
         type: Values
       type: Integer
+    CONFIG_CLOCK_XOSC0_CFDEN:
+      attributes:
+        id: CONFIG_CLOCK_XOSC0_CFDEN
+        label: Enable Clock Failure Detection
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    XOSC0_ENALC:
+      attributes:
+        id: XOSC0_ENALC
+        label: 'Automatic Loop Control '
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
   userData:
     children:
     - attributes:
