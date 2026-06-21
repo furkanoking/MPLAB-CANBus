@@ -1,0 +1,4493 @@
+configVersion: 1.0.0
+componentName: can1
+coreVersion: 5.9.0
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: can1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.25.2
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: can1
+          x: '256'
+          y: '105'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    AUTO_DATA_BIT_TIMING_CALCULATION:
+      attributes:
+        id: AUTO_DATA_BIT_TIMING_CALCULATION
+        label: Automatic Data Bit Timing Calculation
+      type: Boolean
+    AUTO_NOMINAL_BIT_TIMING_CALCULATION:
+      attributes:
+        id: AUTO_NOMINAL_BIT_TIMING_CALCULATION
+        label: Automatic Nominal Bit Timing Calculation
+      type: Boolean
+    CALCULATED_DATA_BITRATE:
+      attributes:
+        id: CALCULATED_DATA_BITRATE
+        label: Calculated Bit Rate (Kbps)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '2000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CALCULATED_DATA_ERRORRATE:
+      attributes:
+        id: CALCULATED_DATA_ERRORRATE
+        label: Error %
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0.000'
+          type: Dynamic
+        type: Values
+      type: String
+    CALCULATED_NOMINAL_BITRATE:
+      attributes:
+        id: CALCULATED_NOMINAL_BITRATE
+        label: Calculated Bit Rate (Kbps)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '500'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CALCULATED_NOMINAL_ERRORRATE:
+      attributes:
+        id: CALCULATED_NOMINAL_ERRORRATE
+        label: Error %
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0.000'
+          type: Dynamic
+        type: Values
+      type: String
+    CAN1_EXT_FILTER10_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER10_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER10_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER10_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER10_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER10_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER10_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER10_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER11_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER11_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER11_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER11_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER11_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER11_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER11_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER11_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER12_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER12_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER12_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER12_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER12_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER12_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER12_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER12_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER13_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER13_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER13_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER13_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER13_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER13_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER13_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER13_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER14_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER14_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER14_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER14_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER14_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER14_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER14_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER14_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER15_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER15_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER15_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER15_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER15_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER15_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER15_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER15_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER16_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER16_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER16_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER16_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER16_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER16_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER16_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER16_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER17_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER17_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER17_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER17_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER17_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER17_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER17_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER17_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER18_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER18_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER18_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER18_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER18_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER18_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER18_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER18_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER19_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER19_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER19_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER19_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER19_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER19_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER19_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER19_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER1_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER1_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER1_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER1_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER1_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER1_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER1_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER1_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER20_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER20_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER20_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER20_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER20_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER20_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER20_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER20_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER21_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER21_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER21_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER21_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER21_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER21_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER21_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER21_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER22_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER22_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER22_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER22_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER22_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER22_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER22_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER22_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER23_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER23_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER23_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER23_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER23_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER23_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER23_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER23_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER24_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER24_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER24_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER24_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER24_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER24_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER24_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER24_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER25_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER25_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER25_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER25_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER25_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER25_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER25_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER25_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER26_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER26_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER26_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER26_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER26_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER26_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER26_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER26_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER27_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER27_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER27_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER27_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER27_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER27_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER27_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER27_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER28_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER28_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER28_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER28_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER28_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER28_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER28_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER28_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER29_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER29_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER29_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER29_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER29_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER29_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER29_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER29_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER2_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER2_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER2_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER2_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER2_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER2_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER2_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER2_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER30_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER30_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER30_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER30_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER30_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER30_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER30_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER30_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER31_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER31_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER31_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER31_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER31_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER31_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER31_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER31_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER32_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER32_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER32_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER32_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER32_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER32_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER32_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER32_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER33_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER33_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER33_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER33_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER33_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER33_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER33_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER33_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER34_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER34_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER34_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER34_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER34_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER34_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER34_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER34_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER35_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER35_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER35_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER35_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER35_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER35_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER35_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER35_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER36_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER36_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER36_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER36_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER36_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER36_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER36_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER36_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER37_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER37_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER37_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER37_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER37_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER37_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER37_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER37_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER38_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER38_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER38_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER38_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER38_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER38_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER38_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER38_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER39_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER39_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER39_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER39_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER39_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER39_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER39_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER39_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER3_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER3_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER3_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER3_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER3_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER3_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER3_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER3_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER40_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER40_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER40_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER40_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER40_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER40_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER40_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER40_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER41_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER41_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER41_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER41_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER41_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER41_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER41_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER41_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER42_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER42_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER42_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER42_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER42_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER42_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER42_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER42_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER43_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER43_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER43_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER43_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER43_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER43_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER43_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER43_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER44_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER44_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER44_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER44_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER44_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER44_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER44_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER44_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER45_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER45_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER45_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER45_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER45_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER45_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER45_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER45_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER46_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER46_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER46_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER46_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER46_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER46_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER46_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER46_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER47_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER47_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER47_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER47_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER47_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER47_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER47_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER47_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER48_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER48_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER48_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER48_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER48_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER48_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER48_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER48_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER49_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER49_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER49_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER49_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER49_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER49_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER49_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER49_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER4_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER4_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER4_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER4_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER4_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER4_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER4_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER4_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER50_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER50_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER50_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER50_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER50_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER50_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER50_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER50_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER51_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER51_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER51_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER51_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER51_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER51_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER51_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER51_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER52_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER52_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER52_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER52_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER52_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER52_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER52_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER52_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER53_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER53_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER53_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER53_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER53_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER53_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER53_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER53_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER54_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER54_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER54_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER54_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER54_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER54_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER54_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER54_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER55_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER55_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER55_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER55_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER55_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER55_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER55_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER55_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER56_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER56_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER56_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER56_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER56_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER56_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER56_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER56_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER57_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER57_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER57_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER57_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER57_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER57_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER57_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER57_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER58_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER58_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER58_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER58_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER58_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER58_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER58_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER58_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER59_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER59_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER59_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER59_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER59_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER59_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER59_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER59_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER5_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER5_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER5_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER5_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER5_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER5_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER5_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER5_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER60_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER60_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER60_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER60_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER60_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER60_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER60_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER60_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER61_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER61_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER61_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER61_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER61_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER61_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER61_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER61_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER62_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER62_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER62_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER62_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER62_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER62_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER62_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER62_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER63_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER63_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER63_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER63_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER63_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER63_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER63_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER63_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER64_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER64_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER64_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER64_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER64_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER64_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER64_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER64_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER6_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER6_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER6_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER6_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER6_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER6_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER6_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER6_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER7_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER7_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER7_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER7_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER7_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER7_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER7_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER7_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER8_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER8_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER8_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER8_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER8_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER8_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER8_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER8_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_EXT_FILTER9_CONFIG:
+      attributes:
+        id: CAN1_EXT_FILTER9_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_EXT_FILTER9_EFID1:
+      attributes:
+        id: CAN1_EXT_FILTER9_EFID1
+        label: ID1
+      type: Hex
+    CAN1_EXT_FILTER9_EFID2:
+      attributes:
+        id: CAN1_EXT_FILTER9_EFID2
+        label: ID2
+      type: Hex
+    CAN1_EXT_FILTER9_TYPE:
+      attributes:
+        id: CAN1_EXT_FILTER9_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER1:
+      attributes:
+        id: CAN1_STD_FILTER1
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: Menu
+    CAN1_STD_FILTER100_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER100_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER100_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER100_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER100_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER100_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER100_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER100_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER101_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER101_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER101_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER101_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER101_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER101_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER101_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER101_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER102_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER102_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER102_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER102_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER102_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER102_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER102_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER102_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER103_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER103_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER103_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER103_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER103_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER103_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER103_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER103_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER104_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER104_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER104_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER104_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER104_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER104_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER104_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER104_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER105_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER105_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER105_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER105_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER105_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER105_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER105_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER105_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER106_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER106_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER106_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER106_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER106_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER106_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER106_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER106_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER107_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER107_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER107_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER107_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER107_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER107_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER107_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER107_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER108_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER108_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER108_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER108_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER108_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER108_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER108_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER108_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER109_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER109_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER109_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER109_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER109_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER109_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER109_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER109_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER10_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER10_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER10_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER10_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER10_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER10_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER10_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER10_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER110_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER110_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER110_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER110_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER110_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER110_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER110_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER110_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER111_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER111_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER111_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER111_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER111_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER111_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER111_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER111_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER112_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER112_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER112_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER112_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER112_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER112_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER112_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER112_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER113_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER113_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER113_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER113_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER113_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER113_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER113_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER113_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER114_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER114_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER114_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER114_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER114_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER114_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER114_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER114_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER115_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER115_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER115_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER115_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER115_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER115_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER115_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER115_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER116_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER116_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER116_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER116_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER116_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER116_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER116_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER116_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER117_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER117_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER117_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER117_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER117_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER117_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER117_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER117_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER118_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER118_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER118_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER118_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER118_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER118_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER118_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER118_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER119_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER119_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER119_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER119_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER119_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER119_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER119_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER119_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER11_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER11_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER11_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER11_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER11_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER11_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER11_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER11_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER120_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER120_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER120_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER120_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER120_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER120_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER120_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER120_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER121_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER121_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER121_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER121_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER121_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER121_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER121_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER121_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER122_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER122_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER122_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER122_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER122_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER122_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER122_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER122_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER123_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER123_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER123_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER123_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER123_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER123_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER123_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER123_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER124_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER124_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER124_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER124_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER124_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER124_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER124_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER124_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER125_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER125_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER125_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER125_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER125_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER125_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER125_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER125_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER126_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER126_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER126_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER126_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER126_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER126_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER126_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER126_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER127_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER127_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER127_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER127_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER127_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER127_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER127_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER127_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER128_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER128_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER128_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER128_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER128_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER128_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER128_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER128_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER12_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER12_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER12_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER12_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER12_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER12_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER12_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER12_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER13_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER13_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER13_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER13_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER13_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER13_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER13_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER13_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER14_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER14_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER14_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER14_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER14_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER14_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER14_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER14_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER15_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER15_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER15_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER15_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER15_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER15_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER15_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER15_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER16_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER16_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER16_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER16_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER16_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER16_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER16_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER16_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER17_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER17_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER17_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER17_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER17_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER17_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER17_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER17_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER18_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER18_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER18_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER18_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER18_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER18_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER18_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER18_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER19_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER19_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER19_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER19_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER19_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER19_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER19_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER19_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER1_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER1_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER1_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER1_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER1_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER1_SFID2
+        label: ID2
+      children:
+      - children:
+        - attributes:
+            value: '32'
+          type: User
+        type: Values
+      type: Hex
+    CAN1_STD_FILTER1_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER1_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER20_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER20_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER20_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER20_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER20_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER20_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER20_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER20_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER21_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER21_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER21_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER21_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER21_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER21_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER21_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER21_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER22_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER22_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER22_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER22_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER22_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER22_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER22_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER22_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER23_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER23_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER23_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER23_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER23_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER23_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER23_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER23_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER24_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER24_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER24_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER24_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER24_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER24_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER24_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER24_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER25_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER25_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER25_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER25_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER25_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER25_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER25_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER25_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER26_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER26_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER26_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER26_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER26_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER26_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER26_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER26_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER27_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER27_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER27_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER27_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER27_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER27_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER27_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER27_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER28_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER28_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER28_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER28_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER28_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER28_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER28_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER28_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER29_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER29_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER29_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER29_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER29_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER29_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER29_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER29_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER2_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER2_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER2_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER2_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER2_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER2_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER2_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER2_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER30_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER30_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER30_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER30_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER30_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER30_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER30_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER30_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER31_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER31_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER31_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER31_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER31_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER31_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER31_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER31_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER32_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER32_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER32_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER32_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER32_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER32_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER32_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER32_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER33_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER33_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER33_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER33_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER33_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER33_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER33_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER33_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER34_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER34_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER34_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER34_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER34_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER34_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER34_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER34_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER35_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER35_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER35_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER35_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER35_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER35_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER35_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER35_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER36_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER36_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER36_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER36_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER36_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER36_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER36_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER36_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER37_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER37_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER37_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER37_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER37_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER37_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER37_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER37_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER38_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER38_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER38_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER38_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER38_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER38_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER38_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER38_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER39_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER39_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER39_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER39_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER39_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER39_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER39_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER39_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER3_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER3_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER3_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER3_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER3_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER3_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER3_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER3_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER40_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER40_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER40_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER40_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER40_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER40_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER40_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER40_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER41_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER41_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER41_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER41_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER41_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER41_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER41_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER41_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER42_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER42_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER42_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER42_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER42_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER42_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER42_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER42_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER43_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER43_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER43_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER43_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER43_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER43_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER43_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER43_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER44_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER44_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER44_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER44_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER44_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER44_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER44_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER44_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER45_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER45_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER45_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER45_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER45_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER45_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER45_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER45_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER46_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER46_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER46_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER46_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER46_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER46_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER46_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER46_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER47_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER47_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER47_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER47_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER47_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER47_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER47_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER47_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER48_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER48_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER48_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER48_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER48_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER48_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER48_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER48_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER49_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER49_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER49_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER49_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER49_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER49_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER49_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER49_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER4_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER4_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER4_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER4_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER4_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER4_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER4_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER4_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER50_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER50_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER50_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER50_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER50_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER50_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER50_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER50_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER51_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER51_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER51_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER51_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER51_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER51_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER51_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER51_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER52_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER52_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER52_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER52_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER52_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER52_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER52_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER52_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER53_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER53_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER53_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER53_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER53_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER53_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER53_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER53_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER54_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER54_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER54_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER54_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER54_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER54_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER54_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER54_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER55_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER55_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER55_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER55_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER55_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER55_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER55_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER55_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER56_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER56_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER56_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER56_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER56_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER56_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER56_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER56_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER57_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER57_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER57_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER57_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER57_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER57_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER57_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER57_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER58_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER58_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER58_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER58_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER58_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER58_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER58_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER58_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER59_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER59_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER59_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER59_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER59_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER59_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER59_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER59_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER5_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER5_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER5_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER5_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER5_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER5_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER5_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER5_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER60_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER60_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER60_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER60_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER60_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER60_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER60_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER60_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER61_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER61_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER61_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER61_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER61_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER61_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER61_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER61_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER62_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER62_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER62_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER62_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER62_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER62_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER62_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER62_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER63_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER63_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER63_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER63_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER63_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER63_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER63_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER63_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER64_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER64_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER64_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER64_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER64_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER64_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER64_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER64_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER65_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER65_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER65_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER65_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER65_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER65_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER65_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER65_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER66_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER66_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER66_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER66_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER66_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER66_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER66_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER66_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER67_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER67_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER67_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER67_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER67_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER67_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER67_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER67_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER68_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER68_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER68_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER68_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER68_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER68_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER68_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER68_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER69_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER69_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER69_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER69_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER69_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER69_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER69_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER69_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER6_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER6_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER6_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER6_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER6_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER6_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER6_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER6_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER70_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER70_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER70_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER70_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER70_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER70_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER70_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER70_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER71_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER71_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER71_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER71_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER71_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER71_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER71_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER71_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER72_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER72_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER72_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER72_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER72_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER72_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER72_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER72_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER73_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER73_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER73_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER73_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER73_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER73_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER73_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER73_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER74_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER74_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER74_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER74_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER74_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER74_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER74_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER74_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER75_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER75_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER75_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER75_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER75_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER75_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER75_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER75_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER76_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER76_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER76_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER76_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER76_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER76_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER76_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER76_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER77_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER77_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER77_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER77_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER77_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER77_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER77_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER77_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER78_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER78_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER78_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER78_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER78_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER78_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER78_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER78_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER79_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER79_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER79_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER79_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER79_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER79_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER79_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER79_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER7_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER7_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER7_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER7_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER7_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER7_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER7_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER7_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER80_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER80_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER80_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER80_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER80_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER80_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER80_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER80_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER81_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER81_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER81_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER81_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER81_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER81_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER81_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER81_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER82_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER82_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER82_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER82_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER82_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER82_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER82_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER82_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER83_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER83_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER83_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER83_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER83_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER83_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER83_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER83_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER84_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER84_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER84_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER84_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER84_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER84_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER84_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER84_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER85_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER85_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER85_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER85_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER85_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER85_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER85_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER85_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER86_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER86_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER86_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER86_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER86_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER86_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER86_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER86_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER87_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER87_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER87_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER87_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER87_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER87_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER87_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER87_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER88_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER88_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER88_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER88_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER88_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER88_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER88_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER88_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER89_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER89_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER89_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER89_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER89_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER89_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER89_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER89_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER8_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER8_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER8_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER8_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER8_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER8_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER8_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER8_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER90_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER90_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER90_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER90_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER90_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER90_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER90_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER90_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER91_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER91_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER91_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER91_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER91_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER91_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER91_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER91_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER92_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER92_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER92_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER92_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER92_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER92_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER92_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER92_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER93_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER93_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER93_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER93_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER93_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER93_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER93_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER93_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER94_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER94_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER94_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER94_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER94_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER94_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER94_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER94_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER95_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER95_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER95_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER95_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER95_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER95_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER95_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER95_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER96_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER96_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER96_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER96_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER96_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER96_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER96_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER96_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER97_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER97_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER97_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER97_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER97_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER97_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER97_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER97_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER98_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER98_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER98_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER98_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER98_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER98_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER98_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER98_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER99_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER99_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER99_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER99_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER99_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER99_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER99_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER99_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN1_STD_FILTER9_CONFIG:
+      attributes:
+        id: CAN1_STD_FILTER9_CONFIG
+        label: Element Configuration
+      type: KeyValueSet
+    CAN1_STD_FILTER9_SFID1:
+      attributes:
+        id: CAN1_STD_FILTER9_SFID1
+        label: ID1
+      type: Hex
+    CAN1_STD_FILTER9_SFID2:
+      attributes:
+        id: CAN1_STD_FILTER9_SFID2
+        label: ID2
+      type: Hex
+    CAN1_STD_FILTER9_TYPE:
+      attributes:
+        id: CAN1_STD_FILTER9_TYPE
+        label: Type
+      type: KeyValueSet
+    CAN_CORE_CLOCK_FREQ:
+      attributes:
+        id: CAN_CORE_CLOCK_FREQ
+        label: Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '60000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CAN_GENERATE_LEGACY_APIS:
+      attributes:
+        id: CAN_GENERATE_LEGACY_APIS
+        label: Generate Legacy APIs
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CAN_IE_BECE_ENABLE:
+      attributes:
+        id: CAN_IE_BECE_ENABLE
+        label: CAN_IE_BECE_ENABLE
+      type: Boolean
+    CAN_IE_BEUE_ENABLE:
+      attributes:
+        id: CAN_IE_BEUE_ENABLE
+        label: CAN_IE_BEUE_ENABLE
+      type: Boolean
+    CAN_INSTANCE_NAME:
+      attributes:
+        id: CAN_INSTANCE_NAME
+        label: CAN_INSTANCE_NAME
+      type: String
+    CAN_OPMODE:
+      attributes:
+        id: CAN_OPMODE
+        label: CAN Operation Mode
+      children:
+      - children:
+        - attributes:
+            value: CAN FD
+          type: User
+        type: Values
+      type: Combo
+    CAN_TIMEOUT:
+      attributes:
+        id: CAN_TIMEOUT
+        label: Use Timeout Counter
+      type: Boolean
+    DATA_BITRATE:
+      attributes:
+        id: DATA_BITRATE
+        label: Bit Rate (Kbps)
+      children:
+      - children:
+        - attributes:
+            value: '2000'
+          type: User
+        type: Values
+      type: Integer
+    DATA_SAMPLE_POINT:
+      attributes:
+        id: DATA_SAMPLE_POINT
+        label: Sample Point %
+      type: Float
+    DATA_TIME_QUANTA_PERIOD:
+      attributes:
+        id: DATA_TIME_QUANTA_PERIOD
+        label: Time Quanta (ns)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '16.667'
+          type: Dynamic
+        type: Values
+      type: String
+    DBTP_DBRP:
+      attributes:
+        id: DBTP_DBRP
+        label: Bit Rate Prescaler
+      type: Integer
+    DBTP_DSJW:
+      attributes:
+        id: DBTP_DSJW
+        label: Synchronization Jump Width (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '8'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_DTSEG1:
+      attributes:
+        id: DBTP_DTSEG1
+        label: Time Segment Before Sample Point (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '21'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_DTSEG2:
+      attributes:
+        id: DBTP_DTSEG2
+        label: Time Segment After Sample Point (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '8'
+          type: Dynamic
+        type: Values
+      type: Integer
+    DBTP_SYNC:
+      attributes:
+        id: DBTP_SYNC
+        label: Sync Segment (TQ)
+      type: Integer
+    DBTP_TOTAL_TIME_QUANTA:
+      attributes:
+        id: DBTP_TOTAL_TIME_QUANTA
+        label: Total Time Quanta (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '30'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FILTERS_EXT:
+      attributes:
+        id: FILTERS_EXT
+        label: 'Number of Extended Filters:'
+      type: Integer
+    FILTERS_EXT_NOMATCH:
+      attributes:
+        id: FILTERS_EXT_NOMATCH
+        label: 'Extended message No-Match disposition:'
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    FILTERS_EXT_REJECT:
+      attributes:
+        id: FILTERS_EXT_REJECT
+        label: Reject Extended Remote Frames
+      type: Boolean
+    FILTERS_STD:
+      attributes:
+        id: FILTERS_STD
+        label: 'Number of Standard Filters:'
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: Integer
+    FILTERS_STD_NOMATCH:
+      attributes:
+        id: FILTERS_STD_NOMATCH
+        label: 'Standard message No-Match disposition:'
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    FILTERS_STD_REJECT:
+      attributes:
+        id: FILTERS_STD_REJECT
+        label: Reject Standard Remote Frames
+      type: Boolean
+    INTERRUPT_MODE:
+      attributes:
+        id: INTERRUPT_MODE
+        label: Interrupt Mode
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    NBTP_NBRP:
+      attributes:
+        id: NBTP_NBRP
+        label: Bit Rate Prescaler
+      type: Integer
+    NBTP_NSJW:
+      attributes:
+        id: NBTP_NSJW
+        label: Synchronization Jump Width (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '30'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NTSEG1:
+      attributes:
+        id: NBTP_NTSEG1
+        label: Time Segment Before Sample Point (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '89'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_NTSEG2:
+      attributes:
+        id: NBTP_NTSEG2
+        label: Time Segment After Sample Point (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '30'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NBTP_SYNC:
+      attributes:
+        id: NBTP_SYNC
+        label: Sync Segment (TQ)
+      type: Integer
+    NBTP_TOTAL_TIME_QUANTA:
+      attributes:
+        id: NBTP_TOTAL_TIME_QUANTA
+        label: Total Time Quanta (TQ)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '120'
+          type: Dynamic
+        type: Values
+      type: Integer
+    NOMINAL_BITRATE:
+      attributes:
+        id: NOMINAL_BITRATE
+        label: Bit Rate (Kbps)
+      type: Integer
+    NOMINAL_SAMPLE_POINT:
+      attributes:
+        id: NOMINAL_SAMPLE_POINT
+        label: Sample Point %
+      type: Float
+    NOMINAL_TIME_QUANTA_PERIOD:
+      attributes:
+        id: NOMINAL_TIME_QUANTA_PERIOD
+        label: Time Quanta (ns)
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '16.667'
+          type: Dynamic
+        type: Values
+      type: String
+    RXBUF_USE:
+      attributes:
+        id: RXBUF_USE
+        label: Use Dedicated Rx Buffer
+      type: Boolean
+    RXF0_BYTES_CFG:
+      attributes:
+        id: RXF0_BYTES_CFG
+        label: Element Size
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: KeyValueSet
+    RXF0_ELEMENTS:
+      attributes:
+        id: RXF0_ELEMENTS
+        label: Number of Elements
+      children:
+      - children:
+        - attributes:
+            value: '8'
+          type: User
+        type: Values
+      type: Integer
+    RXF0_OVERWRITE:
+      attributes:
+        id: RXF0_OVERWRITE
+        label: Use Overwrite Mode
+      type: Boolean
+    RXF0_USE:
+      attributes:
+        id: RXF0_USE
+        label: Use RX FIFO 0
+      type: Boolean
+    RXF0_WATERMARK:
+      attributes:
+        id: RXF0_WATERMARK
+        label: Watermark at element
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    RXF0_WP:
+      attributes:
+        id: RXF0_WP
+        label: Watermark %
+      type: Integer
+    RXF1_BYTES_CFG:
+      attributes:
+        id: RXF1_BYTES_CFG
+        label: Element Size
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: KeyValueSet
+    RXF1_ELEMENTS:
+      attributes:
+        id: RXF1_ELEMENTS
+        label: Number of Elements
+      children:
+      - children:
+        - attributes:
+            value: '8'
+          type: User
+        type: Values
+      type: Integer
+    RXF1_OVERWRITE:
+      attributes:
+        id: RXF1_OVERWRITE
+        label: Use Overwrite Mode
+      type: Boolean
+    RXF1_USE:
+      attributes:
+        id: RXF1_USE
+        label: Use RX FIFO 1
+      type: Boolean
+    RXF1_WATERMARK:
+      attributes:
+        id: RXF1_WATERMARK
+        label: Watermark at element
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    RXF1_WP:
+      attributes:
+        id: RXF1_WP
+        label: Watermark %
+      type: Integer
+    RX_BUFFER_BYTES_CFG:
+      attributes:
+        id: RX_BUFFER_BYTES_CFG
+        label: Element Size
+      type: KeyValueSet
+    RX_BUFFER_ELEMENTS:
+      attributes:
+        id: RX_BUFFER_ELEMENTS
+        label: Number of Elements
+      type: Integer
+    TIMEOUT_COUNT:
+      attributes:
+        id: TIMEOUT_COUNT
+        label: 'Timeout Countdown from: '
+      type: Integer
+    TIMEOUT_SELECT:
+      attributes:
+        id: TIMEOUT_SELECT
+        label: 'Timeout mode:'
+      type: KeyValueSet
+    TIMESTAMP_ENABLE:
+      attributes:
+        id: TIMESTAMP_ENABLE
+        label: Timestamp Enable
+      type: Boolean
+    TIMESTAMP_MODE:
+      attributes:
+        id: TIMESTAMP_MODE
+        label: Timestamp mode
+      type: KeyValueSet
+    TIMESTAMP_PRESCALER:
+      attributes:
+        id: TIMESTAMP_PRESCALER
+        label: 'Timestamp/Timeout Counter Prescaler (TCP):'
+      type: Integer
+    TXBUF_USE:
+      attributes:
+        id: TXBUF_USE
+        label: Use Dedicated Tx Buffer
+      type: Boolean
+    TX_BUFFER_ELEMENTS:
+      attributes:
+        id: TX_BUFFER_ELEMENTS
+        label: Number of TX Buffer Elements
+      type: Integer
+    TX_FIFO_BYTES_CFG:
+      attributes:
+        id: TX_FIFO_BYTES_CFG
+        label: Element Size
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '7'
+          type: User
+        type: Values
+      type: KeyValueSet
+    TX_FIFO_ELEMENTS:
+      attributes:
+        id: TX_FIFO_ELEMENTS
+        label: Number of Elements
+      children:
+      - children:
+        - attributes:
+            value: '8'
+          type: User
+        type: Values
+      type: Integer
+    TX_FIFO_WATERMARK:
+      attributes:
+        id: TX_FIFO_WATERMARK
+        label: Watermark at element
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TX_FIFO_WP:
+      attributes:
+        id: TX_FIFO_WP
+        label: Watermark %
+      type: Integer
+    TX_PAUSE:
+      attributes:
+        id: TX_PAUSE
+        label: Enable TX Pause
+      type: Boolean
+    TX_USE:
+      attributes:
+        id: TX_USE
+        label: Use TX FIFO
+      type: Boolean
+    headerFile:
+      attributes:
+        id: headerFile
+      children:
+      - children:
+        - attributes:
+            id: source
+          children:
+          - type: Value
+            value: ../peripheral/can_u2003/templates/plib_can_common_legacy.h
+          type: String
+        type: Attributes
+      type: File
+    instHeaderFile:
+      attributes:
+        id: instHeaderFile
+      children:
+      - children:
+        - attributes:
+            id: source
+          children:
+          - type: Value
+            value: ../peripheral/can_u2003/templates/plib_can_legacy.h.ftl
+          type: String
+        type: Attributes
+      type: File
+    sourceFile:
+      attributes:
+        id: sourceFile
+      children:
+      - children:
+        - attributes:
+            id: source
+          children:
+          - type: Value
+            value: ../peripheral/can_u2003/templates/plib_can_legacy.c.ftl
+          type: String
+        type: Attributes
+      type: File
+  userData: {}

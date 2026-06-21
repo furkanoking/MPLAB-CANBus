@@ -1,0 +1,56 @@
+configVersion: 1.0.0
+componentName: trng
+coreVersion: 5.9.0
+device: ATSAME54P20A
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: trng
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.25.2
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: trng
+          x: '252'
+          y: '204'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    TRNG_INSTANCE_NAME:
+      attributes:
+        id: TRNG_INSTANCE_NAME
+        label: TRNG_INSTANCE_NAME
+      type: String
+    TRNG_Reserved:
+      attributes:
+        id: TRNG_Reserved
+        label: TRNG Reserved
+      type: Boolean
+    TRNG_STANDBY:
+      attributes:
+        id: TRNG_STANDBY
+        label: Run Trng in Standby sleep mode
+      type: Boolean
+    trngEnableEvent:
+      attributes:
+        id: trngEnableEvent
+        label: Enable Data Ready Event Output
+      type: Boolean
+    trngEnableInterrupt:
+      attributes:
+        id: trngEnableInterrupt
+        label: Enable Interrupts
+      type: Boolean
+  userData: {}

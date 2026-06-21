@@ -1,0 +1,101 @@
+{
+    "version": "1.9",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "",
+            "device": "ATSAME54P20A",
+            "imagePath": "./out/Deneme/default.elf",
+            "toolProperties": "default-tool-base",
+            "tool": "Simulator",
+            "packs": [
+                {
+                    "name": "SAME54_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.11.261"
+                },
+                {
+                    "name": "CMSIS",
+                    "vendor": "ARM",
+                    "version": "6.3.0"
+                }
+            ],
+            "fileSet": "default",
+            "toolchain": "default-XC32",
+            "userVariables": "default-uservariables"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {}
+        },
+        {
+            "name": "default-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@4.60",
+            "properties": {
+                "linker.heap-size": "512",
+                "compiler.extra-include-directories": [
+                    "config.mcc/src",
+                    "config.mcc/src/config/default",
+                    "config.mcc/src/packs/ATSAME54P20A_DFP",
+                    "config.mcc/src/packs/CMSIS",
+                    "config.mcc/src/packs/CMSIS/CMSIS/Core/Include"
+                ],
+                "compiler++.extra-include-directories": [
+                    "config.mcc/src",
+                    "config.mcc/src/config/default",
+                    "config.mcc/src/packs/ATSAME54P20A_DFP",
+                    "config.mcc/src/packs/CMSIS",
+                    "config.mcc/src/packs/CMSIS/CMSIS/Core/Include"
+                ],
+                "linker.no-device-startup-code": "true",
+                "C32Global.mstacktcm": "false",
+                "compiler.isolate-each-function": "true",
+                "compiler.optimization-level": "-O1",
+                "compiler.place-data-into-section": "true",
+                "linker.remove-unused-sections": "true",
+                "compiler++.isolate-each-function": "true",
+                "compiler++.optimization-level": "-O1"
+            }
+        },
+        {
+            "name": "default-tool-base",
+            "type": "tool",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "default",
+            "files": [
+                {
+                    "include": "**/*",
+                    "exclude": "**/@(build|_build|out|cmake|.vscode)/**/*"
+                },
+                "config.mcc/src/config/default/peripheral/nvmctrl/plib_nvmctrl.c",
+                "config.mcc/src/config/default/peripheral/sercom/usart/plib_sercom2_usart.c",
+                "config.mcc/src/config/default/peripheral/evsys/plib_evsys.c",
+                "config.mcc/src/config/default/peripheral/sercom/usart/plib_sercom0_usart.c",
+                "config.mcc/src/config/default/peripheral/can/plib_can1.c",
+                "config.mcc/src/config/default/peripheral/sercom/i2c_master/plib_sercom7_i2c_master.c",
+                "config.mcc/src/main.c",
+                "config.mcc/src/config/default/initialization.c",
+                "config.mcc/src/config/default/interrupts.c",
+                "config.mcc/src/config/default/exceptions.c",
+                "config.mcc/src/config/default/ATSAME54P20A.ld",
+                "config.mcc/src/config/default/stdio/xc32_monitor.c",
+                "config.mcc/src/config/default/peripheral/port/plib_port.c",
+                "config.mcc/src/config/default/peripheral/clock/plib_clock.c",
+                "config.mcc/src/config/default/peripheral/nvic/plib_nvic.c",
+                "config.mcc/src/config/default/peripheral/cmcc/plib_cmcc.c",
+                "config.mcc/src/config/default/startup_xc32.c",
+                "config.mcc/src/config/default/libc_syscalls.c",
+                "config.mcc/src/config/default/peripheral/trng/plib_trng.c",
+                "config.mcc/src/config/default/peripheral/tc/plib_tc0.c"
+            ]
+        }
+    ]
+}
