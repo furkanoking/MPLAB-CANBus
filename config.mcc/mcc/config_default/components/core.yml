@@ -2697,6 +2697,17 @@ data:
           type: User
         type: Values
       type: Boolean
+    CONFIG_CLOCK_XOSC0_STARTUP:
+      attributes:
+        id: CONFIG_CLOCK_XOSC0_STARTUP
+        label: Oscillator Startup Time
+      children:
+      - children:
+        - attributes:
+            value: '5'
+          type: User
+        type: Values
+      type: KeyValueSet
   userData:
     children:
     - attributes:
