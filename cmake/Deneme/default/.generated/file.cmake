@@ -39,7 +39,6 @@ set_source_files_properties(${Deneme_default_default_XC32_FILE_TYPE_compile} PRO
 set(Deneme_default_default_XC32_FILE_TYPE_compile_cpp)
 set_source_files_properties(${Deneme_default_default_XC32_FILE_TYPE_compile_cpp} PROPERTIES LANGUAGE CXX)
 set(Deneme_default_default_XC32_FILE_TYPE_link)
-set(Deneme_default_default_XC32_FILE_TYPE_bin2hex)
 
 # The linker script used for the build.
 set(Deneme_default_LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/src/config/default/ATSAME54P20A.ld")

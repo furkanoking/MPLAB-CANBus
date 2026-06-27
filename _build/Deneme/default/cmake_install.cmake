@@ -1,8 +1,8 @@
-# Install script for directory: /Users/furkanozen/Desktop/MPLAB/Deneme/cmake/Deneme/default
+# Install script for directory: D:/Tez/MPLAB-CANBus/cmake/Deneme/default
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/Deneme_default_project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Applications/microchip/xc32/v4.60/bin/xc32-objdump")
+  set(CMAKE_OBJDUMP "C:/Program Files/Microchip/xc32/v5.10/bin/xc32-objdump.exe")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/install_local_manifest.txt"
+  file(WRITE "D:/Tez/MPLAB-CANBus/_build/Deneme/default/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/Tez/MPLAB-CANBus/_build/Deneme/default/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

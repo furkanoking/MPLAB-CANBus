@@ -151,7 +151,7 @@ data:
       children:
       - children:
         - attributes:
-            value: '0'
+            value: '1'
           type: User
         type: Values
       type: Integer
@@ -163,7 +163,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '2'
+            value: '4'
           type: Dynamic
         type: Values
       type: Integer
@@ -178,7 +178,7 @@ data:
             value: '119'
           type: Dynamic
         - attributes:
-            value: '9'
+            value: '39'
           type: User
         type: Values
       type: Integer
@@ -190,7 +190,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '10.0'
+            value: '40.0'
           type: Dynamic
         type: Values
       type: Float
@@ -201,7 +201,7 @@ data:
       children:
       - children:
         - attributes:
-            value: 'true'
+            value: 'false'
           type: User
         type: Values
       type: Boolean
@@ -235,7 +235,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -259,7 +259,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -313,7 +313,7 @@ data:
             value: '6'
           type: Dynamic
         - attributes:
-            value: '0'
+            value: '1'
           type: User
         type: Values
       type: KeyValueSet
@@ -572,7 +572,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -595,7 +595,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -2478,7 +2478,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '0x1D4C0'
+            value: '0xBB80'
           type: Dynamic
         type: Values
       type: String
@@ -2492,7 +2492,7 @@ data:
             id: max
           children:
           - type: Value
-            value: '139.81012'
+            value: '349.5253'
           type: Float
         type: Attributes
       type: Float
@@ -2528,7 +2528,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -2600,7 +2600,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '120000000'
+            value: '48000000'
           type: Dynamic
         type: Values
       type: Integer
@@ -2624,7 +2624,7 @@ data:
       - children:
         - attributes:
             id: core
-            value: '12000000'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer
@@ -2708,6 +2708,116 @@ data:
           type: User
         type: Values
       type: KeyValueSet
+    CONFIG_CLOCK_DPLL0_REF_CLOCK:
+      attributes:
+        id: CONFIG_CLOCK_DPLL0_REF_CLOCK
+        label: DPLL Reference Clock Source
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        - attributes:
+            value: '2'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_0_SRC:
+      attributes:
+        id: GCLK_0_SRC
+        label: Source Selection
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '7'
+          type: Dynamic
+        - attributes:
+            value: '6'
+          type: User
+        type: Values
+      type: KeyValueSet
+    XOSC1_FREQ:
+      attributes:
+        id: XOSC1_FREQ
+        label: XOSC1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '12000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC1_ENABLE:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_ENABLE
+        label: External Multipurpose Crystal Oscillator(XOSC) Enable
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XOSC1_ENALC:
+      attributes:
+        id: XOSC1_ENALC
+        label: 'Automatic Loop Control '
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    CONFIG_CLOCK_XOSC1_STARTUP:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_STARTUP
+        label: Oscillator Startup Time
+      children:
+      - children:
+        - attributes:
+            value: '5'
+          type: User
+        type: Values
+      type: KeyValueSet
+    XOSC1_IMULT:
+      attributes:
+        id: XOSC1_IMULT
+        label: Oscillator Current Multiplier
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '4'
+          type: Dynamic
+        type: Values
+      type: Integer
+    XOSC1_IPTAT:
+      attributes:
+        id: XOSC1_IPTAT
+        label: Oscillator Current Reference
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Integer
+    CONFIG_CLOCK_XOSC1_FREQUENCY:
+      attributes:
+        id: CONFIG_CLOCK_XOSC1_FREQUENCY
+        label: Frequency
+      children:
+      - children:
+        - attributes:
+            value: '12000000'
+          type: User
+        type: Values
+      type: Integer
   userData:
     children:
     - attributes:

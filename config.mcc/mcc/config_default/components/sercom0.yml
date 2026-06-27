@@ -120,7 +120,7 @@ data:
             id: max
           children:
           - type: Value
-            value: '2050'
+            value: '5125'
           type: Integer
         type: Attributes
       type: Integer
@@ -132,7 +132,7 @@ data:
       - children:
         - attributes:
             id: sercom0
-            value: '1'
+            value: '0'
           type: Dynamic
         type: Values
       type: Integer

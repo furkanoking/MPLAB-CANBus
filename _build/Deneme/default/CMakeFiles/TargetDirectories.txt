@@ -1,5 +1,5 @@
-/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/CMakeFiles/Deneme_default_default_XC32_compile.dir
-/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/CMakeFiles/Deneme_default_image_l4mS_0Xl.dir
-/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/CMakeFiles/Deneme_default_Bin2Hex.dir
-/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/CMakeFiles/edit_cache.dir
-/Users/furkanozen/Desktop/MPLAB/Deneme/_build/Deneme/default/CMakeFiles/rebuild_cache.dir
+D:/Tez/MPLAB-CANBus/_build/Deneme/default/CMakeFiles/Deneme_default_default_XC32_compile.dir
+D:/Tez/MPLAB-CANBus/_build/Deneme/default/CMakeFiles/Deneme_default_image_JZPqOJBM.dir
+D:/Tez/MPLAB-CANBus/_build/Deneme/default/CMakeFiles/Deneme_default_Bin2Hex.dir
+D:/Tez/MPLAB-CANBus/_build/Deneme/default/CMakeFiles/edit_cache.dir
+D:/Tez/MPLAB-CANBus/_build/Deneme/default/CMakeFiles/rebuild_cache.dir

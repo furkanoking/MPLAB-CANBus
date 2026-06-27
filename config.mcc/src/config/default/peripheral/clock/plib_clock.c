@@ -43,12 +43,15 @@
 
 static void OSCCTRL_Initialize(void)
 {
-    /****************** XOSC0 Initialization   ********************************/
+
+    /****************** XOSC1 Initialization   ********************************/
 
     /* Configure External Oscillator */
-    OSCCTRL_REGS->OSCCTRL_XOSCCTRL[1] = OSCCTRL_XOSCCTRL_STARTUP(0U) | OSCCTRL_XOSCCTRL_IMULT(4U) | OSCCTRL_XOSCCTRL_IPTAT(3U) | OSCCTRL_XOSCCTRL_ENALC_Msk | OSCCTRL_XOSCCTRL_XTALEN_Msk | OSCCTRL_XOSCCTRL_ENABLE_Msk;
-    /* XOSC ready-wait removed: 12 MHz now sourced from internal DFLL (no external crystal needed) */
-
+    OSCCTRL_REGS->OSCCTRL_XOSCCTRL[1] = OSCCTRL_XOSCCTRL_STARTUP(5U) | OSCCTRL_XOSCCTRL_IMULT(4U) | OSCCTRL_XOSCCTRL_IPTAT(3U) | OSCCTRL_XOSCCTRL_ENALC_Msk | OSCCTRL_XOSCCTRL_XTALEN_Msk | OSCCTRL_XOSCCTRL_ENABLE_Msk;
+    while((OSCCTRL_REGS->OSCCTRL_STATUS & OSCCTRL_STATUS_XOSCRDY1_Msk) != OSCCTRL_STATUS_XOSCRDY1_Msk)
+    {
+        /* Waiting for the XOSC Ready state */
+    }
 }
 
 static void OSC32KCTRL_Initialize(void)
@@ -58,26 +61,24 @@ static void OSC32KCTRL_Initialize(void)
     /* Configure 32K External Oscillator */
     OSC32KCTRL_REGS->OSC32KCTRL_XOSC32K = OSC32KCTRL_XOSC32K_STARTUP(2U) | OSC32KCTRL_XOSC32K_ENABLE_Msk | OSC32KCTRL_XOSC32K_CGM(1U) | OSC32KCTRL_XOSC32K_EN32K_Msk | OSC32KCTRL_XOSC32K_XTALEN_Msk;
 
-    /* XOSC32K ready-wait removed (not required for this test) */
+    while(!((OSC32KCTRL_REGS->OSC32KCTRL_STATUS & OSC32KCTRL_STATUS_XOSC32KRDY_Msk) == OSC32KCTRL_STATUS_XOSC32KRDY_Msk))
+    {
+        /* Waiting for the XOSC32K Ready state */
+    }
 
     OSC32KCTRL_REGS->OSC32KCTRL_RTCCTRL = OSC32KCTRL_RTCCTRL_RTCSEL(0U);
 }
 
 static void FDPLL0_Initialize(void)
 {
-    GCLK_REGS->GCLK_PCHCTRL[1] = GCLK_PCHCTRL_GEN(0x1U)  | GCLK_PCHCTRL_CHEN_Msk;
-    while ((GCLK_REGS->GCLK_PCHCTRL[1] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
-    {
-        /* Wait for synchronization */
-    }
 
     /****************** DPLL0 Initialization  *********************************/
 
     /* Configure DPLL    */
-    OSCCTRL_REGS->DPLL[0].OSCCTRL_DPLLCTRLB = OSCCTRL_DPLLCTRLB_FILTER(0U) | OSCCTRL_DPLLCTRLB_LTIME(0x0U)| OSCCTRL_DPLLCTRLB_REFCLK(0U) ;
+    OSCCTRL_REGS->DPLL[0].OSCCTRL_DPLLCTRLB = OSCCTRL_DPLLCTRLB_FILTER(0U) | OSCCTRL_DPLLCTRLB_LTIME(0x0U)| OSCCTRL_DPLLCTRLB_REFCLK(3U) | OSCCTRL_DPLLCTRLB_DIV(1U);
 
 
-    OSCCTRL_REGS->DPLL[0].OSCCTRL_DPLLRATIO = OSCCTRL_DPLLRATIO_LDRFRAC(0U) | OSCCTRL_DPLLRATIO_LDR(9U);
+    OSCCTRL_REGS->DPLL[0].OSCCTRL_DPLLRATIO = OSCCTRL_DPLLRATIO_LDRFRAC(0U) | OSCCTRL_DPLLRATIO_LDR(39U);
 
     while((OSCCTRL_REGS->DPLL[0].OSCCTRL_DPLLSYNCBUSY & OSCCTRL_DPLLSYNCBUSY_DPLLRATIO_Msk) == OSCCTRL_DPLLSYNCBUSY_DPLLRATIO_Msk)
     {
@@ -125,7 +126,7 @@ static void GCLK0_Initialize(void)
 
 static void GCLK1_Initialize(void)
 {
-    GCLK_REGS->GCLK_GENCTRL[1] = GCLK_GENCTRL_DIV(4U) | GCLK_GENCTRL_SRC(6U) | GCLK_GENCTRL_GENEN_Msk;
+    GCLK_REGS->GCLK_GENCTRL[1] = GCLK_GENCTRL_DIV(1U) | GCLK_GENCTRL_SRC(1U) | GCLK_GENCTRL_GENEN_Msk;
 
     while((GCLK_REGS->GCLK_SYNCBUSY & GCLK_SYNCBUSY_GENCTRL_GCLK1) == GCLK_SYNCBUSY_GENCTRL_GCLK1)
     {
@@ -135,7 +136,7 @@ static void GCLK1_Initialize(void)
 
 static void GCLK2_Initialize(void)
 {
-    GCLK_REGS->GCLK_GENCTRL[2] = GCLK_GENCTRL_DIV(2U) | GCLK_GENCTRL_SRC(6U) | GCLK_GENCTRL_GENEN_Msk;
+    GCLK_REGS->GCLK_GENCTRL[2] = GCLK_GENCTRL_DIV(2U) | GCLK_GENCTRL_SRC(7U) | GCLK_GENCTRL_GENEN_Msk;
 
     while((GCLK_REGS->GCLK_SYNCBUSY & GCLK_SYNCBUSY_GENCTRL_GCLK2) == GCLK_SYNCBUSY_GENCTRL_GCLK2)
     {
@@ -154,11 +155,11 @@ void CLOCK_Initialize (void)
     /* Function to Initialize the 32KHz Oscillators */
     OSC32KCTRL_Initialize();
 
+    FDPLL0_Initialize();
     DFLL_Initialize();
     GCLK1_Initialize();
-    /* FDPLL0_Initialize(); removed: 12 MHz ref is out of DPLL range. CPU now runs from DFLL 48 MHz. */
-    GCLK0_Initialize();
     GCLK2_Initialize();
+    GCLK0_Initialize();
 
     /* MISRAC 2023 deviation block end */
 

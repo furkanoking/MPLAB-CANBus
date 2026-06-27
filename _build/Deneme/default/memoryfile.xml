@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="/Users/furkanozen/Desktop/MPLAB/Deneme/out/Deneme/default.elf">
+  <executable name="D:\Tez\MPLAB-CANBus\out\Deneme\default.elf">
     <memory name="program">
       <units>bytes</units>
       <length>1048576</length>
-      <used>7108</used>
-      <free>1041468</free>
+      <used>7211</used>
+      <free>1041365</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

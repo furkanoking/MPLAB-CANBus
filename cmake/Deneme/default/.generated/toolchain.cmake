@@ -1,34 +1,34 @@
 # This file configures the compiler to use with CMake.
 
 set(CMAKE_C_COMPILER_WORKS YES CACHE BOOL "Tell CMake that the compiler works, but cannot be run during the configuration stage")
-set(MP_CC "/Applications/microchip/xc32/v4.60/bin/xc32-gcc" CACHE PATH "Legacy variable from MPLAB X pointing to the compiler")
-set(MP_CC_DIR "/Applications/microchip/xc32/v4.60/bin" CACHE PATH "Legacy variable from MPLAB X pointing to the compiler base directory")
-set(CMAKE_C_COMPILER "/Applications/microchip/xc32/v4.60/bin/xc32-gcc" CACHE FILEPATH "Path to the compiler binary")
+set(MP_CC "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-gcc.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the compiler")
+set(MP_CC_DIR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin" CACHE STRING "Legacy variable from MPLAB X pointing to the compiler base directory")
+set(CMAKE_C_COMPILER "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-gcc.exe" CACHE FILEPATH "Path to the compiler binary")
 
 set(CMAKE_CXX_COMPILER_WORKS YES CACHE BOOL "Tell CMake that the compiler works, but cannot be run during the configuration stage")
-set(MP_CPPC "/Applications/microchip/xc32/v4.60/bin/xc32-g++" CACHE PATH "Legacy variable from MPLAB X pointing to the c++ compiler")
-set(MP_CPPC_DIR "/Applications/microchip/xc32/v4.60/bin" CACHE PATH "Legacy variable from MPLAB X pointing to the c++ compiler base directory")
-set(CMAKE_CXX_COMPILER "/Applications/microchip/xc32/v4.60/bin/xc32-g++" CACHE FILEPATH "Path to the compiler binary.")
-set(MP_CPPC_DIR "${CMAKE_CXX_COMPILER}" CACHE PATH "Legacy variable from MPLAB X pointing to the compiler base directory.")
+set(MP_CPPC "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-g++.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the c++ compiler")
+set(MP_CPPC_DIR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin" CACHE STRING "Legacy variable from MPLAB X pointing to the c++ compiler base directory")
+set(CMAKE_CXX_COMPILER "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-g++.exe" CACHE FILEPATH "Path to the compiler binary.")
+set(MP_CPPC_DIR "${CMAKE_CXX_COMPILER}" CACHE STRING "Legacy variable from MPLAB X pointing to the compiler base directory.")
 
 set(CMAKE_ASM_COMPILER_WORKS YES CACHE BOOL "Tell CMake that the assembler works, but cannot be run during the configuration stage")
-set(MP_AS "/Applications/microchip/xc32/v4.60/bin/xc32-gcc" CACHE PATH "Legacy variable from MPLAB X pointing to the assembler")
-set(MP_AS_DIR "/Applications/microchip/xc32/v4.60/bin" CACHE PATH "Legacy variable from MPLAB X pointing to the assembler base directory")
-set(CMAKE_ASM_COMPILER "/Applications/microchip/xc32/v4.60/bin/xc32-gcc" CACHE FILEPATH "Path to the compiler binary.")
-set(MP_AS "${CMAKE_ASM_COMPILER}" CACHE FILEPATH "Legacy variable from MPLAB X pointing to the assembler binary.")
+set(MP_AS "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-gcc.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the assembler")
+set(MP_AS_DIR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin" CACHE STRING "Legacy variable from MPLAB X pointing to the assembler base directory")
+set(CMAKE_ASM_COMPILER "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-gcc.exe" CACHE FILEPATH "Path to the compiler binary.")
+set(MP_AS "${CMAKE_ASM_COMPILER}" CACHE STRING "Legacy variable from MPLAB X pointing to the assembler binary.")
 
-set(MP_LD "/Applications/microchip/xc32/v4.60/bin/xc32-ld" CACHE FILEPATH "Legacy variable from MPLAB X pointing to the linker binary.")
-set(MP_LD_DIR "/Applications/microchip/xc32/v4.60/bin" CACHE PATH "Legacy variable from MPLAB X pointing to the linker base directory")
+set(MP_LD "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-ld.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the linker binary.")
+set(MP_LD_DIR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin" CACHE STRING "Legacy variable from MPLAB X pointing to the linker base directory")
 
-set(MP_AR "/Applications/microchip/xc32/v4.60/bin/xc32-ar" CACHE FILEPATH "Legacy variable from MPLAB X pointing to the archiver binary.")
-set(MP_AR_DIR "/Applications/microchip/xc32/v4.60/bin" CACHE PATH "Legacy variable from MPLAB X pointing to the archiver base directory")
+set(MP_AR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-ar.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the archiver binary.")
+set(MP_AR_DIR "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin" CACHE STRING "Legacy variable from MPLAB X pointing to the archiver base directory")
 
-set(CMAKE_AR "/Applications/microchip/xc32/v4.60/bin/xc32-ar" CACHE FILEPATH "Path to the archiver binary.")
+set(CMAKE_AR "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-ar.exe" CACHE FILEPATH "Path to the archiver binary.")
 
-set(OBJCOPY "/Applications/microchip/xc32/v4.60/bin/xc32-objcopy" CACHE FILEPATH "Path to objcopy executable")
-set(OBJDUMP "/Applications/microchip/xc32/v4.60/bin/xc32-objdump" CACHE FILEPATH "Path to objdump executable")
+set(OBJCOPY "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-objcopy.exe" CACHE FILEPATH "Path to objcopy executable")
+set(OBJDUMP "c:/Program Files/Microchip/xc32/v5.10/bin/xc32-objdump.exe" CACHE FILEPATH "Path to objdump executable")
 
-set(MP_BIN2HEX "/Applications/microchip/xc32/v4.60/bin/xc32-bin2hex" CACHE FILEPATH "Legacy variable from MPLAB X pointing to the bin2hex binary.")
+set(MP_BIN2HEX "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-bin2hex.exe" CACHE STRING "Legacy variable from MPLAB X pointing to the bin2hex binary.")
 
 # Extend the object path max if the OS is capable and it looks like the toolchain supports it
 # See https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation

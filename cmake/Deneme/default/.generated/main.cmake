@@ -43,42 +43,26 @@ add_library(Deneme_default_default_XC32_dependentObject OBJECT ${Deneme_default_
 
 endif()
 
-# Handle files with suffix elf, for group default-XC32
-if(Deneme_default_default_XC32_FILE_TYPE_bin2hex)
-add_library(Deneme_default_default_XC32_bin2hex OBJECT ${Deneme_default_default_XC32_FILE_TYPE_bin2hex})
-    Deneme_default_default_XC32_bin2hex_rule(Deneme_default_default_XC32_bin2hex)
-    list(APPEND Deneme_default_library_list "$<TARGET_OBJECTS:Deneme_default_default_XC32_bin2hex>")
-
-endif()
-
 
 # Main target for this project
-add_executable(Deneme_default_image_l4mS_0Xl ${Deneme_default_library_list})
+add_executable(Deneme_default_image_JZPqOJBM ${Deneme_default_library_list})
 
-if(NOT CMAKE_HOST_WIN32)
-    set_target_properties(Deneme_default_image_l4mS_0Xl PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${Deneme_default_output_dir}")
-endif()
-set_target_properties(Deneme_default_image_l4mS_0Xl PROPERTIES
+set_target_properties(Deneme_default_image_JZPqOJBM PROPERTIES
     OUTPUT_NAME "default"
-    SUFFIX ".elf")
-target_link_libraries(Deneme_default_image_l4mS_0Xl PRIVATE ${Deneme_default_default_XC32_FILE_TYPE_link})
+    SUFFIX ".elf"
+    RUNTIME_OUTPUT_DIRECTORY "${Deneme_default_output_dir}")
+target_link_libraries(Deneme_default_image_JZPqOJBM PRIVATE ${Deneme_default_default_XC32_FILE_TYPE_link})
 
 # Add the link options from the rule file.
-Deneme_default_link_rule( Deneme_default_image_l4mS_0Xl)
+Deneme_default_link_rule( Deneme_default_image_JZPqOJBM)
 
-# Call bin2hex function from the rule file
-Deneme_default_bin2hex_rule(Deneme_default_image_l4mS_0Xl)
-if(CMAKE_HOST_WIN32)
-    add_custom_command(
-        TARGET Deneme_default_image_l4mS_0Xl
-        POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${Deneme_default_output_dir}
-        COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Deneme_default_image_l4mS_0Xl> ${Deneme_default_output_dir}/${Deneme_default_original_image_name}
-        BYPRODUCTS ${Deneme_default_output_dir}/${Deneme_default_original_image_name}
-        COMMENT "Copying elf to out location")
-    set_property(
-        TARGET Deneme_default_image_l4mS_0Xl
-        APPEND PROPERTY ADDITIONAL_CLEAN_FILES
-        ${Deneme_default_output_dir}/${Deneme_default_original_image_name})
-endif()
+# Add bin2hex target for converting built file to a .hex file.
+string(REGEX REPLACE [.]elf$ .hex Deneme_default_image_name_hex ${Deneme_default_image_name})
+add_custom_target(Deneme_default_Bin2Hex ALL
+    COMMAND ${MP_BIN2HEX} \"${Deneme_default_output_dir}/${Deneme_default_image_name}\"
+    BYPRODUCTS ${Deneme_default_output_dir}/${Deneme_default_image_name_hex}
+    COMMENT "Convert built file to .hex")
+add_dependencies(Deneme_default_Bin2Hex Deneme_default_image_JZPqOJBM)
+
+
 

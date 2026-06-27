@@ -141,13 +141,13 @@ void SYS_Initialize ( void* data )
 
     SERCOM2_USART_Initialize();
 
-    EVSYS_Initialize();
-
     SERCOM0_USART_Initialize();
 
-    CAN1_Initialize();
+    EVSYS_Initialize();
 
     SERCOM7_I2C_Initialize();
+
+    CAN1_Initialize();
 
 	TRNG_Initialize();
 

@@ -1,6 +1,6 @@
 # The following functions contains all the flags passed to the different build stages.
 
-set(PACK_REPO_PATH "/Users/furkanozen/.mchp_packs" CACHE PATH "Path to the root of a pack repository.")
+set(PACK_REPO_PATH "C:/Users/user/.mchp_packs" CACHE PATH "Path to the root of a pack repository.")
 
 function(Deneme_default_default_XC32_assemble_rule target)
     set(options
@@ -90,13 +90,4 @@ function(Deneme_default_link_rule target)
     list(REMOVE_ITEM options "")
     target_link_options(${target} PRIVATE "${options}")
     target_compile_definitions(${target} PRIVATE "XPRJ_default=default")
-endfunction()
-function(Deneme_default_bin2hex_rule target)
-    add_custom_target(
-        Deneme_default_Bin2Hex ALL
-        COMMAND ${MP_BIN2HEX} ${Deneme_default_image_name}
-        WORKING_DIRECTORY ${Deneme_default_output_dir}
-        BYPRODUCTS "${Deneme_default_output_dir}/${Deneme_default_image_base_name}.hex"
-        COMMENT "Convert build file to .hex")
-    add_dependencies(Deneme_default_Bin2Hex ${target})
 endfunction()

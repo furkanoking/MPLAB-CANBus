@@ -48,12 +48,12 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/sercom/usart/plib_sercom2_usart.h"
-#include "peripheral/evsys/plib_evsys.h"
+#include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/sercom/usart/plib_sercom0_usart.h"
-#include "peripheral/can/plib_can1.h"
+#include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/sercom/i2c_master/plib_sercom7_i2c_master.h"
+#include "peripheral/can/plib_can1.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
@@ -76,7 +76,7 @@ extern "C" {
 #define DEVICE_SERIES        "SAME54"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000U
+#define CPU_CLOCK_FREQUENCY 48000000U
 
 // *****************************************************************************
 // *****************************************************************************

@@ -1,7 +1,7 @@
 {
     "cmake.sourceDirectory": "/Users/furkanozen/Desktop/MPLAB/Deneme/cmake/Deneme/default",
     "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\Deneme\\default",
-    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v4.60\\bin\\xc32-clangd.exe",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-clangd.exe",
     "C_Cpp.intelliSenseEngine": "disabled",
     "memory-inspector.debugTypes": [
         "arm-debugger",
