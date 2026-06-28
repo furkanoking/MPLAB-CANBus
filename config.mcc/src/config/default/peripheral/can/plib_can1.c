@@ -158,7 +158,9 @@ void CAN1_Initialize(void)
     CAN1_REGS->CAN_DBTP = CAN_DBTP_DTSEG2(7UL) | CAN_DBTP_DTSEG1(20UL) | CAN_DBTP_DBRP(0UL) | CAN_DBTP_DSJW(7UL);
 
     /* Set Nominal Bit timing and Prescaler Register */
-    CAN1_REGS->CAN_NBTP  = CAN_NBTP_NTSEG2(29UL) | CAN_NBTP_NTSEG1(88UL) | CAN_NBTP_NBRP(0UL) | CAN_NBTP_NSJW(29UL);
+    /* NBRP(9) -> prescaler 10 -> 60MHz/(10*120) = 50 kbit/s (terminasyonsuz denemek icin dusuk hiz).
+     * Termination eklersen 500 kbit/s'e donmek icin NBRP'yi tekrar 0 yap. */
+    CAN1_REGS->CAN_NBTP  = CAN_NBTP_NTSEG2(29UL) | CAN_NBTP_NTSEG1(88UL) | CAN_NBTP_NBRP(9UL) | CAN_NBTP_NSJW(29UL);
 
     /* Receive Buffer / FIFO Element Size Configuration Register */
     CAN1_REGS->CAN_RXESC = 0UL  | CAN_RXESC_F0DS(7UL) | CAN_RXESC_F1DS(7UL);
