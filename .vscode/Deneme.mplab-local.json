@@ -1,8 +1,7 @@
 {
     "configurations": [
         {
-            "reference": "default",
-            "toolSerial": "ATML2748071800006539"
+            "reference": "default"
         }
     ]
 }
